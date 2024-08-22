@@ -11,7 +11,7 @@ int main () {
     printf("Enter the operator (+, -, *, / ) : ");
     scanf("%c", &operator);
     printf("enter the two numbers one by one : ");
-    scanf("%f %lf", &first,&second);
+    scanf("%lf %lf", &first,&second);
 
 
     switch (operator)
@@ -28,7 +28,7 @@ int main () {
 
     case '*' :
         // Perform multiplication and display result
-        printf("%lf + %lf = %lf", first,second,(first*second));
+        printf("%lf * %lf = %lf", first,second,(first*second));
         break;
 
     case '/' :
